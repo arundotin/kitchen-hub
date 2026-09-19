@@ -1,4 +1,4 @@
-package com.arun.kitchenhub;
+package com.arun.kitchenhub.kitchen;
 
 import com.github.f4b6a3.ulid.UlidCreator;
 import org.springframework.stereotype.Service;

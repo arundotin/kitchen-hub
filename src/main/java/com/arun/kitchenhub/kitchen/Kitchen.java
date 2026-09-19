@@ -1,11 +1,10 @@
-package com.arun.kitchenhub;
+package com.arun.kitchenhub.kitchen;
 
-public record KitchenResponse(
+public record Kitchen(
         String id,
         String name,
         String city,
         String cuisine,
         KitchenStatus status
-
 ) {
 }

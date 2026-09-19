@@ -1,4 +1,4 @@
-package com.arun.kitchenhub;
+package com.arun.kitchenhub.kitchen;
 
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;

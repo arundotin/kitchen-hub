@@ -1,4 +1,4 @@
-package com.arun.kitchenhub;
+package com.arun.kitchenhub.kitchen;
 
 public enum KitchenStatus {
     OPEN,
