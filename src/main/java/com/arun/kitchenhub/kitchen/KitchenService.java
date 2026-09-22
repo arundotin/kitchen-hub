@@ -1,5 +1,6 @@
 package com.arun.kitchenhub.kitchen;
 
+import com.arun.kitchenhub.kitchen.internal.*;
 import com.github.f4b6a3.ulid.UlidCreator;
 import org.springframework.stereotype.Service;
 
@@ -46,6 +47,16 @@ public class KitchenService {
 
         return kitchen.map(this::toKitchenResponse);
 
+    }
+
+    public Optional<KitchenInfo> getKitchenInfo(String id) {
+        return kitchenDao.findById(id)
+                .map(kitchen -> new KitchenInfo(
+                        kitchen.id(),
+                        kitchen.name(),
+                        kitchen.city(),
+                        kitchen.cuisine()
+                ));
     }
 
     private KitchenResponse toKitchenResponse(Kitchen savedKitchen) {

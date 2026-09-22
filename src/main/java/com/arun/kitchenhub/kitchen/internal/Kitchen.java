@@ -1,4 +1,4 @@
-package com.arun.kitchenhub.kitchen;
+package com.arun.kitchenhub.kitchen.internal;
 
 public record Kitchen(
         String id,

@@ -1,5 +1,6 @@
-package com.arun.kitchenhub.kitchen;
+package com.arun.kitchenhub.kitchen.internal;
 
+import com.arun.kitchenhub.kitchen.KitchenService;
 import org.springframework.http.ResponseEntity;
 import org.springframework.web.bind.annotation.*;
 
